@@ -1,0 +1,3 @@
+include ':httplibrary'
+include ':app'
+rootProject.name = "HttpR"
