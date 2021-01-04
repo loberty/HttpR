@@ -20,7 +20,7 @@ class RetrofitHelper private constructor(){
     fun getRetrofit(): Retrofit {
         return defaultRetrofit ?: synchronized(this) {
             val hostUrl = Constants.baseUrl
-            val baseUrl = if (hostUrl != null && !hostUrl.endsWith("/")) "$hostUrl/" else hostUrl
+            val baseUrl = if (!hostUrl.endsWith("/")) "$hostUrl/" else hostUrl
             defaultRetrofit ?: builder.baseUrl(baseUrl).build().also { defaultRetrofit = it }
         }
     }
