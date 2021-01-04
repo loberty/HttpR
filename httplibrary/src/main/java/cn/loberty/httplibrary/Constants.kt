@@ -6,6 +6,6 @@ package cn.loberty.httplibrary
  */
 class Constants {
     companion object {
-        const val baseUrl = "https://gank.io"
+        const val baseUrl = "https://gank.io/api/v2/"
     }
 }
