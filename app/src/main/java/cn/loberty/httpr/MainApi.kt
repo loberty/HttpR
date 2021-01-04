@@ -9,7 +9,7 @@ import retrofit2.http.GET
  */
 interface MainApi {
 
-    @GET("/categories/Article")
+    @GET("/api/v2/categories/Article")
     suspend fun getListItem() : BaseResponse<MutableList<ArticleBean>>
 
 }
